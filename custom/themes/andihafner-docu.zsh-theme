@@ -85,8 +85,13 @@ function git_time_since_commit() {
 
 # andihafner.com: Add user name according to
 #   https://zsh-prompt-generator.site/
+# PROMPT='
+# %{$fg[blue]%}%n@%m%{$reset_color%} %{$fg[cyan]%}%~ %{$reset_color%}$(git_prompt_short_sha)$(git_prompt_info)
+# %{$fg[red]%}%!%{$reset_color%} $(prompt_char) $(vi_mode_prompt_info) '
+
+# andihafner.com: example setup without real user and hostname for documentation purposes
 PROMPT='
-%{$fg[blue]%}%n@%m%{$reset_color%} %{$fg[cyan]%}%~ %{$reset_color%}$(git_prompt_short_sha)$(git_prompt_info)
+%{$fg[blue]%}user@host%{$reset_color%} %{$fg[cyan]%}%~ %{$reset_color%}$(git_prompt_short_sha)$(git_prompt_info)
 %{$fg[red]%}%!%{$reset_color%} $(prompt_char) $(vi_mode_prompt_info) '
 
 RPROMPT='${return_status}$(git_time_since_commit)$(git_prompt_status)%{$reset_color%}'
