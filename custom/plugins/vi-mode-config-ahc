@@ -1,0 +1,14 @@
+# source this script from ~/.zshrc after source $ZSH/oh-my-zsh.sh
+
+# User configuration
+# andihafner.com 2023
+
+set -o vi
+
+export VI_MODE_SET_CURSOR=true
+export VI_MODE_CURSOR_NORMAL=1 # Blinking block
+export VI_MODE_CURSOR_INSERT=3 # Blinking underline
+
+export MODE_INDICATOR="%F{red}[N]%f"
+export INSERT_MODE_INDICATOR="%F{green}[I]%f"
+
