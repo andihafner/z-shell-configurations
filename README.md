@@ -4,7 +4,7 @@
 
 Custom modifications of the [Z-shell](https://en.wikipedia.org/wiki/Z_shell) based on the [oh my zsh framework](https://ohmyz.sh/)
 
-***\- Enhanced vi-mode indicator for better distinction between insert and normal mode ***
+*\- Enhanced vi-mode indicator for better distinction between insert and normal mode*
 
 ![Image of insert mode prompt](./docs/vi-mode/andihafner.com-theme-vim-insert-mode-wo-user-name.jpg)
 
